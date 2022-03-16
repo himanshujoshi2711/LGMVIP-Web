@@ -36,6 +36,7 @@ function App() {
             </span>
         </div>
     </nav> */}
+
       <nav class="navv">
          <ul class="menu">
              <li><a class="nav_items" href=" "> LetsGrowMore</a></li>
@@ -43,11 +44,22 @@ function App() {
              <button className='btn' onClick={getData}>Get Users</button>
          </ul>
      </nav>
+
     <div>
        {
            data.map((data)=>{
                   return(
-                    <div className='card'>
+                    <div className="cards">
+                    <div className="article">
+                       <img  className="img1"
+                       src={data.avatar} alt="tech"/>
+                      <div className="details">
+                          <h3 className="titel">ID: {data.id}</h3>
+                          <h3 className="author">EMAIL: {data.email}</h3>
+                          <h3 className="author">Name: {data.first_name} {data.Last_name}</h3>
+                      </div>
+                    </div>
+                    {/* <div className='card'>
                       <div className='container'>
     
     
@@ -58,15 +70,14 @@ function App() {
                           <h4> Email: {data.email} </h4>
                           <img src={data.avatar} />
                           <h4>Name: {data.first_name} {data.last_name}</h4>
-  
-                            </div>
-                            </div>
-                            </div>
-                  )
-         })
-                          }
+                          
                           </div>
-    </div>
-  );}
+                            </div>
+                            </div> */}
+                          </div>
+                  )
+                })}
+                </div>
+                </div>
+    );}
 export default App;
-
