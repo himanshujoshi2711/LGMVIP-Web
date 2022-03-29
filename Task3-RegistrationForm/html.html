@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Student Enrollment Form</h2>
+    </div>
+    <div class="left">
+        <table class="dataTable">
+            <tr>
+                <td>
+                    <label for="studentName">Name</label>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" name="Name" id="studentName"><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="studentEmail">Email</label>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" name="Email" id="studentEmail"><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="studentWebsite">Website</label>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" name="Website" id="studentWebsite"><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="studentImgLink">Image link</label>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" name="Image Link" id="studentImgLink"><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <form id="gender">
+                        <input type="radio" id="genderMale" name="gender" value="Male">
+                        <label for="genderMale">MALE</label><br>
+                        <input type="radio" id="genderFemale" name="gender" value="Female">
+                        <label for="genderFemale">FEMALE</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="skills">Skills</label>
+                </td>
+                <td>
+                    <form id="StudentSkills">
+                        <input type="checkbox" name="Skills" value="Java" id="skillsJava">
+                        <label for="skillsJava">JAVASCRIPT</label>
+                        <input type="checkbox" name="Skills" value="HTML" id="skillsHtml">
+                        <label for="skillsHtml">HTML</label>
+                        <input type="checkbox" name="Skills" value="CSS" id="skillsCss">
+                        <label for="skillsCss">CSS</label>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" id="enroll" class="glow-on-hover">Register</button>
+        <button id="clear" class="btn-three">Reset</button>
+
+<div class="vl"></div>
+    </div>
+    <div class="right">
+        <table id="displayTable">
+        <tr>
+            <th>Description</th>
+            <th>Image</th>
+        </tr>
+    </table></div>
+
+    <script src="js.js"></script>
+</body>
+</html>
